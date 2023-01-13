@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contact_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        fab:layout_constraintBottom_toTopOf="@+id/button_contact"
+        fab:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/text_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_4dp"
+            android:background="#B339FF43"
+            android:text="Telephone"
+            android:textColor="@color/black"
+            fab:layout_constraintBottom_toBottomOf="@+id/button_phone"
+            fab:layout_constraintRight_toLeftOf="@+id/button_phone"
+            fab:layout_constraintTop_toTopOf="@+id/button_phone" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_phone"
+            fab:backgroundTint="#B339FF43"
+            fab:fabSize="mini"
+            fab:layout_constraintBottom_toTopOf="@+id/button_facebook"
+            fab:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/text_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_4dp"
+            android:background="#B33971FF"
+            android:text="Facebook"
+            android:textColor="@color/black"
+            fab:layout_constraintBottom_toBottomOf="@+id/button_facebook"
+            fab:layout_constraintRight_toLeftOf="@+id/button_facebook"
+            fab:layout_constraintTop_toTopOf="@+id/button_facebook" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            android:src="@drawable/ic_facebook"
+            fab:backgroundTint="#B33971FF"
+            fab:fabSize="mini"
+            fab:layout_constraintBottom_toTopOf="@+id/button_telegram"
+            fab:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/text_telegram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_4dp"
+            android:background="#B339B9FF"
+            android:text="Telegram"
+            android:textColor="@color/black"
+            fab:layout_constraintBottom_toBottomOf="@+id/button_telegram"
+            fab:layout_constraintRight_toLeftOf="@+id/button_telegram"
+            fab:layout_constraintTop_toTopOf="@+id/button_telegram" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button_telegram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_telegram"
+            fab:backgroundTint="#B339B9FF"
+            fab:fabSize="mini"
+            fab:layout_constraintBottom_toBottomOf="parent"
+            fab:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/text_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_4dp"
+        android:background="#B37C0101"
+        android:text="Contact Us"
+        android:textColor="@color/black"
+        fab:layout_constraintBottom_toBottomOf="@+id/button_contact"
+        fab:layout_constraintRight_toLeftOf="@+id/button_contact"
+        fab:layout_constraintTop_toTopOf="@+id/button_contact" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_contact_us"
+        fab:backgroundTint="#B37C0101"
+        fab:fabSize="mini"
+        fab:layout_constraintBottom_toBottomOf="parent"
+        fab:layout_constraintRight_toRightOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

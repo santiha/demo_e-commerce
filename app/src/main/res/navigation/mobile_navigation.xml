@@ -12,14 +12,26 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.santi.demoe_commerce.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
-
-    <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.santi.demoe_commerce.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.santi.demoe_commerce.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/navigation_product_list"
+        android:name="com.santi.demoe_commerce.ui.product.ProductListFragment"
+        android:label="productList"
+        tools:layout="@layout/fragment_product_list" />
+
+    <fragment
+        android:id="@+id/navigation_product_detail"
+        android:name="com.santi.demoe_commerce.ui.product.detail.ProductDetailFragment"
+        android:label="productDetail"
+        tools:layout="@layout/fragment_product_detail" />
 </navigation>
